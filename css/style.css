@@ -12,7 +12,11 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 30px;
+}
+
+header {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -20,3 +24,37 @@ h1 {
     color: #e53170;
 }
 
+.card-container {
+    padding: 10px 10px 30px;
+    width: 33%;
+    float: left; 
+}
+
+.card {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+}
+
+.card-photo {
+    height: 80px;
+    float: left;
+    padding-right: 10px;
+}
+
+.card-info::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* aggiustare info dentro card */
+
+.name {
+    font-weight: 700;
+}
+
+.email {
+    color: #28dbf8;
+    text-decoration: none;
+}
